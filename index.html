@@ -6,13 +6,48 @@
 	<script src="/node_modules/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js"></script>
 	<script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
 
+	
 	<title>LitElement Example</title>
+	
 </head>
-
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Exo&display=swap');
+</style> 
 
 <body>
-	<p class="color">Hi, Hello</p>
-	<brute-board></brute-board>
+	<brute-board title="TLW Scrum Board">
+		<brute-column title="Selected for development">
+			<brute-card 
+				title="Create dev envirnoment"
+				assignee="https://secure.gravatar.com/avatar/c035ff46bbb414771a43b825cf664ea5"
+				key="TLW-230"
+				></brute-card>
+			<brute-card title="Fix issue with login"></brute-card>
+			<brute-card title="Add supprt for BankID"/></brute-column>
+		  </brute-column>
+	
+		<brute-column title="In progress">
+			<brute-card></brute-card>
+			<brute-card></brute-card>
+			<brute-card></brute-card>
+		</brute-column>
+
+		<brute-column title="In Review">
+			<brute-card></brute-card>
+			<brute-card></brute-card>
+		</brute-column>
+
+		<brute-column title="Ready for test">
+			<brute-card></brute-card>
+			<brute-card></brute-card>
+			<brute-card></brute-card>
+			<brute-card></brute-card>
+		</brute-column>
+
+		<brute-column title="Done">
+			<brute-card></brute-card>
+		</brute-column>
+	</brute-board>
 </body>
 
 </html>

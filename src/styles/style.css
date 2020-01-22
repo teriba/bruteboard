@@ -3,7 +3,9 @@ p {
 }
 
 body {
-  margin: 20px;
+  background-color:white;
+  margin-left: 0px;
+  margin-top: 20px;
 }
 
 .color {
